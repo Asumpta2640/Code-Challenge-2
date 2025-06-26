@@ -1,4 +1,3 @@
-
 const form = document.getElementById('guest-form');
 const nameInput = document.getElementById('guest-name');
 const categoryInput = document.getElementById('guest-category');
