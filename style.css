@@ -1,35 +1,39 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Reset & base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 30px;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  padding: 2rem;
+  color: #333;
 }
-.container{
-    max-width: 500px;
-    margin: auto;
-    background: pink;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
   margin-bottom: 1.5rem;
+  color: #2c3e50;
 }
 
+/* Form styling */
 form {
   display: flex;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 form input,
@@ -37,39 +41,101 @@ form select {
   padding: 0.5rem;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  flex: 1 1 200px;
 }
 
 form button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #4CAF50;
+  background-color: #27ae60;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
 }
+
 form button:hover {
-  background-color: #45a049;
+  background-color: #219150;
 }
-#guest-list{
-    list-style: none;
-    padding: 0;
+
+/* Guest list */
+#guest-list {
+  list-style: none;
+  padding: 0;
 }
 
 #guest-list li {
-  padding: 0.75rem;
-  margin-bottom: 0.5rem;
-  background-color: #e9ecef;
-  border-left: 5px solid #4CAF50;
-  border-radius: 5px;
+  background-color: #f0f0f0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 6px solid #27ae60;
+  border-radius: 6px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-#guest-list li span {
+/* Category tags */
+.category {
+  font-size: 0.9rem;
   font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  color: white;
 }
 
+.category.Friend {
+  background-color: #3498db;
+}
 
+.category.Family {
+  background-color: #9b59b6;
+}
+
+.category.Colleague {
+  background-color: #e67e22;
+}
+
+/* Time */
+.time {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Button container */
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* RSVP Button */
+.rsvp-btn {
+  background-color: #f39c12;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.rsvp-btn:hover {
+  background-color: #d68910;
+}
+
+/* Remove Button */
+.delete-btn {
+  background-color: #e74c3c;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
